@@ -1,0 +1,1 @@
+{ "/appointments": { "target": "http://localhost:8080", "secure": false }, "/providers": { "target": "http://localhost:8080", "secure": false }, "/slots": { "target": "http://localhost:8080", "secure": false }, "/suggestions": { "target": "http://localhost:8080", "secure": false } }

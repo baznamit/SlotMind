@@ -1,0 +1,27 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:slotmind;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    open-in-view: false
+  h2:
+    console:
+      enabled: true
+  jackson:
+    serialization:
+      write-dates-as-timestamps: false
+server:
+  port: 8080
+slotmind:
+  scheduling:
+    strategy: ${SLOTMIND_SCHEDULING_STRATEGY:rule-based}
+  llm:
+    endpoint: ${SLOTMIND_LLM_ENDPOINT:https://litellm-qc.zycus.net/v1/chat/completions}
+    model: ${SLOTMIND_LLM_MODEL:gpt-5.6-luna-azure-payg-global}
+    product: ${SLOTMIND_LLM_PRODUCT:PC1}
+    api-key: ${SLOTMIND_LLM_API_KEY:}
+    timeout: ${SLOTMIND_LLM_TIMEOUT:PT10S}

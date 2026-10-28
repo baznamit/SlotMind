@@ -1,0 +1,28 @@
+{
+  "name": "slotmind-front-desk",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "ng serve --proxy-config proxy.conf.json",
+    "build": "ng build",
+    "test": "ng test --watch=false --browsers=ChromeHeadless"
+  },
+  "dependencies": {
+    "@angular/common": "17.3.12",
+    "@angular/compiler": "17.3.12",
+    "@angular/core": "17.3.12",
+    "@angular/forms": "17.3.12",
+    "@angular/platform-browser": "17.3.12",
+    "@angular/platform-browser-dynamic": "17.3.12",
+    "@angular/router": "17.3.12",
+    "rxjs": "7.8.1",
+    "tslib": "2.6.2",
+    "zone.js": "0.14.4"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "17.3.12",
+    "@angular/cli": "17.3.12",
+    "@angular/compiler-cli": "17.3.12",
+    "typescript": "~5.4.5"
+  }
+}
